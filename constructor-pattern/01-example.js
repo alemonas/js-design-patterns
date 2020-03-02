@@ -59,3 +59,18 @@ defineProp(person, "hasBeard", false);
 
 console.log(person)
 
+// 4. Object.defineProperties
+
+// set properties
+Object.defineProperties(newObject, {
+  "someKey": {
+    value: "Hello 3 world",
+    writable: true
+  },
+  "anotherKey": {
+    value: "Foo bar",
+    writable: false,
+  }
+});
+
+
